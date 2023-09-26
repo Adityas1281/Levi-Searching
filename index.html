@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Levi Searching-Movie Recommender</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bg-primary text-white text-center py-3">
+    <h1>LEVI SEARCHING</h1>
+  </header>
+  <main class="container mt-4">
+    <form id="preferences-form" class="form-inline">
+      <label class="mr-2" for="genre-select">Genre:</label>
+      <select id="genre-select" class="form-control mr-2">
+        <option value="">All</option>
+        <option value="action">Action</option>
+        <option value="comedy">Comedy</option>
+        <option value="drama">Drama</option>
+        <option value="animated">Animated</option>
+      </select>
+
+      <label class="mr-2" for="rating-select">Rating:</label>
+      <select id="rating-select" class="form-control mr-2">
+        <option value="">All</option>
+        <option value="10">10+</option>
+        <option value="9">9+</option>
+        <option value="8">8+</option>
+        <option value="7">7+</option>
+        <option value="6">6+</option>
+        <option value="5">5+</option>
+      </select>
+
+      <button type="submit" class="btn btn-info">Get Recommendations</button>
+    </form>
+
+    <div id="recommendations-container" class="mt-4">
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
